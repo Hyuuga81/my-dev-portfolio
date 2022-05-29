@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.hide {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: #c1c1c1;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.nav-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 10px 0;
+}
+
+.fa-bars {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/***************** SLIDER MENU *****************/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 1.5em;
+    color: #818181;
+}
+
+
+
+/**************** HERO ****************/
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: url("../img/office.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+/**************** ABOUT ME ****************/
+
+#about-me {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+#about-me h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/************** PORTFOLIO ****************/
+
+#portfolio {
+    background-color: #c1c1c1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+.project {
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 20px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+}
+
+.project-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.project-info h3 {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+
+/*************** CONTACT *****************/
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.email, .meet {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 0;
+}
+
+.email-link {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.fa-envelope {
+    /* color:  */
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    border-top: 1px dashed #818181;
+    border-bottom: 1px dashed #818181;
+    padding: 30px 0;
+}
+
+.social-icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#contact h3 {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.social i {
+    font-size: 2em;
+}
+
+#contact .end {
+    padding-top: 50px;
+}
+
+/* TO TOP BUTTON */
+
+.to-top {
+    background: #818181;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
