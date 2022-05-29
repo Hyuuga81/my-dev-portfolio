@@ -38,7 +38,7 @@ main {
     display: none;
 }
 
-/* HEADER */
+/***************** HEADER *****************/
 
 header {
     background-color: #c1c1c1;
@@ -64,7 +64,14 @@ header {
     cursor: pointer;
 }
 
-.items {
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.menu-items {
     display: none;
 }
 
@@ -195,6 +202,13 @@ img {
 
 /*************** CONTACT *****************/
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 #contact {
     width: 100%;
     display: flex;
@@ -228,15 +242,17 @@ img {
 }
 
 .email-link {
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
+    width: 100%;
+    display: inline
 }
 
+.email-link a {
+    text-decoration: none;
+    color: #818181;
+    padding-left: 10px;
+}
 .fa-envelope {
-    /* color:  */
+    color: #818181; 
 }
 
 .social {
@@ -330,7 +346,6 @@ img {
     }
     .project {
         width: 45%;
-        
     }
 
 
@@ -364,12 +379,59 @@ img {
 
     .email-link {
         text-align: center;
-        width: 60%;
+        width: 100%;
     }
 
     .meet {
         justify-content: center;
+    }   
+}
+
+/***************** DESKTOP STYLES ****************/
+
+@media (min-width: 1200px) {
+    /***************** HEADER *****************/
+
+    .menu {
+        width: 30%;
+    }
+    .menu-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
     }
 
-    
+    .menu-items a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    /*************** HERO *******************/
+
+    .hero h1 {
+        width: 100%;
+        padding-top: 450px;
+        padding-bottom: 200px;
+    }
+
+    /**************** ABOUT ME ****************/
+
+    #about-me .container {
+        width: 60%;
+    }
+
+    /************* PORTFOLIO ****************/
+
+    #portfolio .container {
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .project {
+        width: 30%;
+    }
 }
