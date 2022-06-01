@@ -196,6 +196,10 @@ header {
     text-align: center;
 }
 
+#about-me p {
+    line-height: 28px;
+}
+
 /************** PORTFOLIO ****************/
 
 #portfolio {
@@ -341,6 +345,10 @@ footer {
 #contact h3 {
     width: 100%;
     padding: 20px 0;
+}
+
+.meet p {
+    line-height: 28px;
 }
 
 .social i {
@@ -505,6 +513,10 @@ footer {
         width: 60%;
     }
 
+    #about-me p {
+        line-height: 40px;
+    }
+
     /************* PORTFOLIO ****************/
 
     #portfolio .container {
@@ -544,6 +556,10 @@ footer {
 
     .social i:hover {
         color: #f70074;
+    }
+
+    .meet p {
+        line-height: 40px;
     }
 
 }
