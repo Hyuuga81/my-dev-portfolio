@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+:root {
+    --color: #f70074;
+    --color-two: #fff;
+    --color-three: #000;
+}
+
 html {
     font-size: 16px;
     width: 100%;
@@ -41,19 +47,19 @@ main {
 }
 
 h1, a {
-    color: #fff;
+    color: var(--color-two);
     /* desktop font size for h1 3em */
 }
 
 h2 {
     
     padding-bottom: 50px;
-    color: #f70074;
+    color: var(--color);
 }
 
 h3 {
-    padding-top: 50px;
-    color: #737373;
+    /* padding-top: 50px; */
+    color: var(--color-three);
 }
 
 p {
@@ -102,14 +108,11 @@ header {
 }
 .menu-items {
     display: none;
-}
-
-.menu-items a {
-    /* font-size: .8em; */
+    list-style-type: none;
 }
 
 .menu-items a:hover {
-    color: #f70074;
+    color: var(--color);
 }
 
 /***************** SLIDER MENU *****************/
@@ -170,14 +173,14 @@ header {
 
 .hero h1 {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5em;
+    font-size: 2em;
     width: 100%;
     padding-top: 200px;
     padding-bottom: 100px;
 }
 
 .hero .color {
-    color: #f70074;
+    color: var(--color);
 }
 
 /**************** ABOUT ME ****************/
@@ -196,10 +199,93 @@ header {
     text-align: center;
 }
 
-#about-me p {
+#about-me .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.content img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.content p {
+    width: 100%;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+/************** SKILLS *******************/
+
+#skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#skills p {
+    width: 100%;
     line-height: 28px;
 }
 
+.skill-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+.skill-content, .tool-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.skill-content .container, .tool-content .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.one-skill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+}
+
+.one-skill i {
+    width: 15%;
+    font-size: 4em;
+}
+
+.one-skill .one-text {
+    width: 80%;
+}
+
+.one-text .dark {
+    font-weight: bolder;
+    color: var(--color-three);
+}
 /************** PORTFOLIO ****************/
 
 #portfolio {
@@ -262,10 +348,23 @@ img {
     margin-top: 15px;
     padding: 10px 0;
     border-radius: 30px;
-    background-color: #f70074;
+    background-color: var(--color);
     color: #fff;
     cursor: pointer;
     font-size: 1em;
+}
+
+/* use this class instead of button */
+#portfolio .shape {
+    width: 60%;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: var(--color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
 }
 
 /*************** CONTACT *****************/
@@ -353,7 +452,7 @@ footer {
 
 .social i {
     font-size: 2em;
-    color: #f70074;
+    color: var(--color);
 }
 
 #contact .end {
@@ -363,7 +462,7 @@ footer {
 /************ TO TOP BUTTON *******************/
 
 .to-top {
-    background: #f70074;
+    background: var(--color);
     position: fixed;
     bottom: 16px;
     right: 32px;
@@ -408,8 +507,56 @@ footer {
     /************* ABOUT ********************/
 
     #about-me .container {
-        width: 70%;
+        width: 80%;
     }
+
+    .content {
+        justify-content: center;
+    }
+
+    .content img {
+        width: 50%;
+    }
+
+    /************* SKILLS ********************/
+
+    #skills .container {
+        width: 80%;
+    }
+    
+    .skill-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 50px 0;
+    }
+    
+    .skill-content .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+    
+    .one-skill {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+    }
+    
+    .one-skill i {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
 
     /************* PORTFOLIO ****************/
 
@@ -510,12 +657,50 @@ footer {
     /**************** ABOUT ME ****************/
 
     #about-me .container {
-        width: 60%;
+        width: 80%;
     }
 
-    #about-me p {
+    #about-me .content {
+
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .content img {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content .about-copy {
+        width: 65%;
+    }
+    .content p {
+        width: 100%;
         line-height: 40px;
     }
+
+    /**************** SKILLS ****************/
+
+    #skills .container {
+        width: 90%;
+    }
+    .one-skill {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+    }
+    
+    .one-skill i {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
 
     /************* PORTFOLIO ****************/
 
@@ -536,7 +721,7 @@ footer {
     }
 
     #portfolio button:hover {
-        background: #f70074;
+        background: var(--color);
     }
 
     /*************** CONTACT *************/
@@ -546,7 +731,7 @@ footer {
     }
 
     .email-link .fa-envelope:hover, .email-link a:hover {
-        color: #f70074;
+        color: var(--color);
     }
 
     .social i {
@@ -555,7 +740,7 @@ footer {
     }
 
     .social i:hover {
-        color: #f70074;
+        color: var(--color);
     }
 
     .meet p {
