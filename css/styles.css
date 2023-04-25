@@ -137,7 +137,7 @@ i.fa-solid.fa-xmark {
     padding: 8px;
     text-decoration: none;
     font-size: 1.5em;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
@@ -162,7 +162,7 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: linear-gradient(rgb(29, 34, 40, 0.8), rgb(29, 34, 40, 0.8)), url('../img/office.jpg') center, no-repeat;
+    background: linear-gradient(rgb(29, 34, 40, 0.5), rgb(29, 34, 40, 0.5)), url('../img/office.jpg') center, no-repeat;
     background-size: cover;
 }
 
@@ -302,6 +302,10 @@ i.fa-solid.fa-xmark {
     text-align: center;
 }
 
+.dark {
+    padding-bottom: 10px;
+}
+
 /************** PORTFOLIO ****************/
 
 #portfolio {
@@ -324,6 +328,7 @@ i.fa-solid.fa-xmark {
     padding: 0 0 50px 0;
     margin: 20px 0;
     border-radius: 10px;
+    
 }
 
 img {
@@ -371,6 +376,22 @@ img {
     font-size: 1em;
     text-decoration: none;
 }
+
+.tell-me {
+    text-align: justify;
+}
+
+.language {
+    padding: 20px 0;
+}
+
+.language i {
+    padding-right: 10px;
+    color: #fb8112;
+    font-size: 1.25em;
+}
+
+
 
 /*************** CONTACT *****************/
 
@@ -580,6 +601,10 @@ footer {
         width: 45%;
     }
 
+    .tell-me {
+        font-size: .75em;
+        line-height: 24px;
+    }
 
     /**************** CONTACT  **************/
 
