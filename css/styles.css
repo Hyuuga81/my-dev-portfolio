@@ -58,8 +58,58 @@ p {
     color: #1d2228; 
 }
 
-/***************** HEADER *****************/
+/***************** MODAL ******************/
 
+.modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: #fff;
+    
+}
+
+.modal-contents {
+    position: relative;
+    background: #fff;
+    width: 80%; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 5px;
+}
+
+.modal-contents .fa-circle-xmark {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #fb8112;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+.details {
+    width: 80%; 
+    text-align: justify;
+    font-size: .8em;
+    padding: 20px 0;
+}
+
+.tools {
+    font-size: .8em;
+}
+
+
+/***************** HEADER *****************/
 header {
     background-color: #1d2228;
     width: 100%;
@@ -112,7 +162,7 @@ i.fa-solid.fa-xmark {
     list-style-type: none;
 }
 
-/***************** SLIDER MENU *****************/
+/***************** OVERLAY *****************/
 .overlay {
     height: 100%;
     width: 0;
@@ -142,10 +192,6 @@ i.fa-solid.fa-xmark {
     transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-    color: #fff;
-}
-
 .overlay .close {
     position: absolute;
     top: 10px;
@@ -162,7 +208,7 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background: linear-gradient(rgb(29, 34, 40, 0.5), rgb(29, 34, 40, 0.5)), url('../img/office.jpg') center, no-repeat;
+    background: linear-gradient(rgb(29, 34, 40, 0.8), rgb(29, 34, 40, 0.8)), url('../img/office.jpg') center, no-repeat;
     background-size: cover;
 }
 
@@ -295,15 +341,12 @@ i.fa-solid.fa-xmark {
 
 .one-text .dark {
     font-weight: bolder;
-    color: #1d2228;       
+    color: #1d2228;      
+    padding-bottom: 20px; 
 }
 
 .one-text p {
     text-align: center;
-}
-
-.dark {
-    padding-bottom: 10px;
 }
 
 /************** PORTFOLIO ****************/
@@ -318,6 +361,17 @@ i.fa-solid.fa-xmark {
     padding: 100px 0;
 }
 
+#portfolio h2 {
+    padding-bottom: 10px;
+}
+
+#portfolio p {
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+    padding-bottom: 20px;
+}
+
 .project {
     width: 100%;
     background-color: #e1e2e2;  
@@ -328,8 +382,9 @@ i.fa-solid.fa-xmark {
     padding: 0 0 50px 0;
     margin: 20px 0;
     border-radius: 10px;
-    
 }
+
+
 
 img {
     width: 100%;
@@ -375,20 +430,6 @@ img {
     cursor: pointer;
     font-size: 1em;
     text-decoration: none;
-}
-
-.tell-me {
-    text-align: justify;
-}
-
-.language {
-    padding: 20px 0;
-}
-
-.language i {
-    padding-right: 10px;
-    color: #fb8112;
-    font-size: 1.25em;
 }
 
 
@@ -523,6 +564,20 @@ footer {
         font-size: 18px;
     }
 
+    /***************** MODAL ******************/
+
+.modal-contents {
+    width: 60%; 
+}
+
+.details {
+    width: 80%; 
+}
+
+.tools {
+    font-size: .8em;
+}
+
     /*************** HERO *******************/
 
     .hero h1 {
@@ -601,10 +656,6 @@ footer {
         width: 45%;
     }
 
-    .tell-me {
-        font-size: .75em;
-        line-height: 24px;
-    }
 
     /**************** CONTACT  **************/
 
@@ -669,6 +720,73 @@ footer {
         font-size: 3em;
     }
 
+    /****************** MODAL *****************/
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background-color:rgba(0, 0, 0, 0.9);
+        color: #fff;
+        
+    }
+    
+    .modal-contents {
+        position: relative;
+        background: #fff;
+        width: 25%;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        border-radius: 5px;
+    }
+    
+    .modal-contents .fa-circle-xmark {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        color: #fb8112;
+        cursor: pointer;
+        font-size: 1.4em;
+    }
+    
+    .details {
+        width: 80%;
+        text-align: justify;
+        font-size: .8em;
+        padding: 20px 0;
+    }
+    
+    .tools {
+        font-size: .8em;
+    }
+
+    .subscription, 
+.guess, 
+.github, 
+.potluck, 
+.rogue, 
+.unplugged {
+    cursor: pointer;
+}
+
+.subscription:hover, 
+.guess:hover, 
+.github:hover, 
+.potluck:hover, 
+.rogue:hover, 
+.unplugged:hover {
+    color: #fb8112;
+}
     /***************** HEADER *****************/
 
     .menu {
@@ -779,6 +897,10 @@ footer {
 
     .project-info .buttons .shape:hover {
         background: #fb8122 !important;
+    }
+
+    h3 {
+        cursor: pointer;
     }
 
     /*************** CONTACT *************/
