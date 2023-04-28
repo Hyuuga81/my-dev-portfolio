@@ -39,12 +39,13 @@ main {
     display: none;
 }
 
-h1, a {
+h1,
+a {
     color: #fff;
 }
 
 h2 {
-    
+
     padding-bottom: 50px;
     color: #1d2228;
 }
@@ -55,7 +56,7 @@ h3 {
 
 p {
     font-size: 1em;
-    color: #1d2228; 
+    color: #1d2228;
 }
 
 /***************** MODAL ******************/
@@ -71,15 +72,15 @@ p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color:rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    
+
 }
 
 .modal-contents {
     position: relative;
     background: #fff;
-    width: 80%; 
+    width: 80%;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -98,7 +99,7 @@ p {
 }
 
 .details {
-    width: 80%; 
+    width: 80%;
     text-align: justify;
     font-size: .8em;
     padding: 20px 0;
@@ -157,6 +158,7 @@ i.fa-solid.fa-xmark {
     align-items: center;
     flex-flow: row wrap;
 }
+
 .menu-items {
     display: none;
     list-style-type: none;
@@ -223,7 +225,7 @@ i.fa-solid.fa-xmark {
 }
 
 .hero .color {
-    color: #fb8112; 
+    color: #fb8112;
 }
 
 /**************** ABOUT ME ****************/
@@ -299,7 +301,8 @@ i.fa-solid.fa-xmark {
     padding: 50px 0;
 }
 
-.skill-content, .tool-content {
+.skill-content,
+.tool-content {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -307,7 +310,8 @@ i.fa-solid.fa-xmark {
     flex-flow: row wrap;
 }
 
-.skill-content .container, .tool-content .container {
+.skill-content .container,
+.tool-content .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -341,8 +345,8 @@ i.fa-solid.fa-xmark {
 
 .one-text .dark {
     font-weight: bolder;
-    color: #1d2228;      
-    padding-bottom: 20px; 
+    color: #1d2228;
+    padding-bottom: 20px;
 }
 
 .one-text p {
@@ -361,6 +365,10 @@ i.fa-solid.fa-xmark {
     padding: 100px 0;
 }
 
+.portfolio-head {
+    width: 100%;
+}
+
 #portfolio h2 {
     padding-bottom: 10px;
 }
@@ -370,11 +378,12 @@ i.fa-solid.fa-xmark {
     text-align: center;
     color: #ff0000;
     padding-bottom: 20px;
+    font-style: italic;
 }
 
 .project {
     width: 100%;
-    background-color: #e1e2e2;  
+    background-color: #e1e2e2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,7 +434,7 @@ img {
     margin-top: 15px;
     padding: 10px 0;
     border-radius: 30px;
-    background-color: #1d2228; 
+    background-color: #1d2228;
     color: #fff;
     cursor: pointer;
     font-size: 1em;
@@ -443,6 +452,7 @@ footer {
     align-items: center;
     flex-flow: row wrap;
 }
+
 #contact {
     width: 100%;
     display: flex;
@@ -466,7 +476,8 @@ footer {
     flex-flow: row wrap;
 }
 
-.email, .meet {
+.email,
+.meet {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -486,6 +497,7 @@ footer {
     color: #4d4d4d;
     padding-left: 10px;
 }
+
 .fa-envelope {
     color: #4d4d4d;
 }
@@ -521,7 +533,7 @@ footer {
 
 .social i {
     font-size: 2em;
-    color: #fb8122 !important; 
+    color: #fb8122 !important;
 }
 
 #contact .end {
@@ -566,17 +578,17 @@ footer {
 
     /***************** MODAL ******************/
 
-.modal-contents {
-    width: 60%; 
-}
+    .modal-contents {
+        width: 60%;
+    }
 
-.details {
-    width: 80%; 
-}
+    .details {
+        width: 80%;
+    }
 
-.tools {
-    font-size: .8em;
-}
+    .tools {
+        font-size: .8em;
+    }
 
     /*************** HERO *******************/
 
@@ -606,7 +618,7 @@ footer {
     #skills .container {
         width: 80%;
     }
-    
+
     .skill-info {
         width: 100%;
         display: flex;
@@ -615,7 +627,7 @@ footer {
         flex-flow: row wrap;
         padding: 50px 0;
     }
-    
+
     .skill-content .container {
         width: 100%;
         display: flex;
@@ -623,7 +635,7 @@ footer {
         align-items: flex-start;
         flex-flow: row wrap;
     }
-    
+
     .one-skill {
         width: 45%;
         display: flex;
@@ -632,14 +644,14 @@ footer {
         flex-flow: row wrap;
         padding-bottom: 50px;
     }
-    
+
     .one-skill i {
         width: 100%;
         font-size: 4em;
         text-align: center;
         padding-bottom: 30px;
     }
-    
+
 
     /************* PORTFOLIO ****************/
 
@@ -652,6 +664,7 @@ footer {
         justify-content: space-between;
         align-items: stretch;
     }
+
     .project {
         width: 45%;
     }
@@ -663,7 +676,9 @@ footer {
         justify-content: space-between;
     }
 
-    .email, .social, .meet {
+    .email,
+    .social,
+    .meet {
         width: 30%;
         text-align: center;
     }
@@ -696,15 +711,15 @@ footer {
 
     .meet {
         justify-content: center;
-    }   
+    }
 
     /************ TO TOP BUTTON *******************/
 
-.to-top {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-}
+    .to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
 }
 
 /***************** DESKTOP STYLES ****************/
@@ -733,11 +748,11 @@ footer {
         justify-content: center;
         align-items: center;
         flex-flow: row wrap;
-        background-color:rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         color: #fff;
-        
+
     }
-    
+
     .modal-contents {
         position: relative;
         background: #fff;
@@ -749,7 +764,7 @@ footer {
         flex-flow: row wrap;
         border-radius: 5px;
     }
-    
+
     .modal-contents .fa-circle-xmark {
         position: absolute;
         top: -15px;
@@ -758,40 +773,32 @@ footer {
         cursor: pointer;
         font-size: 1.4em;
     }
-    
+
     .details {
         width: 80%;
         text-align: justify;
         font-size: .8em;
         padding: 20px 0;
     }
-    
+
     .tools {
         font-size: .8em;
     }
 
-    .subscription, 
-.guess, 
-.github, 
-.potluck, 
-.rogue, 
-.unplugged {
-    cursor: pointer;
-}
+    .project-title {
+        cursor: pointer;
+    }
 
-.subscription:hover, 
-.guess:hover, 
-.github:hover, 
-.potluck:hover, 
-.rogue:hover, 
-.unplugged:hover {
-    color: #fb8112;
-}
+    .project-title:hover {
+        color: #fb8112;
+    }
+
     /***************** HEADER *****************/
 
     .menu {
         width: 50%;
     }
+
     .menu-items {
         width: 100%;
         display: flex;
@@ -845,6 +852,7 @@ footer {
     .content .about-copy {
         width: 65%;
     }
+
     .content p {
         width: 100%;
         line-height: 40px;
@@ -855,6 +863,7 @@ footer {
     #skills .container {
         width: 90%;
     }
+
     .one-skill {
         width: 30%;
         display: flex;
@@ -863,7 +872,7 @@ footer {
         flex-flow: row wrap;
         padding-bottom: 50px;
     }
-    
+
     .one-skill i {
         width: 100%;
         font-size: 4em;
@@ -871,7 +880,7 @@ footer {
         padding-bottom: 30px;
     }
 
-    .one-skill .one-text  { 
+    .one-skill .one-text {
         width: 72%;
     }
 
@@ -883,11 +892,12 @@ footer {
         justify-content: space-between;
         align-items: stretch;
     }
+
     .project {
         width: 30%;
     }
 
-    .project-info .buttons  {
+    .project-info .buttons {
         font-size: 0.8em;
     }
 
@@ -905,11 +915,13 @@ footer {
 
     /*************** CONTACT *************/
 
-    .email-link .fa-envelope, .email-link a {
+    .email-link .fa-envelope,
+    .email-link a {
         color: #818181;
     }
 
-    .email-link .fa-envelope:hover, .email-link a:hover {
+    .email-link .fa-envelope:hover,
+    .email-link a:hover {
         color: #fb8112;
     }
 
@@ -919,7 +931,7 @@ footer {
     }
 
     .social i:hover {
-        color: #fb8122 !important; 
+        color: #fb8122 !important;
     }
 
     .meet p {
@@ -928,10 +940,10 @@ footer {
 
     /************ TO TOP BUTTON *******************/
 
-.to-top {
-    width: 50px;
-    height: 50px;
-    font-size: 32px;
-}
+    .to-top {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
 
 }

@@ -89,6 +89,20 @@ heading.forEach(function(item) {
                 detailsHeading.style.width = "100%";
                 detailsHeading.style.textAlign = "center";
             }
+        } else if (item.classList.contains("sticky-notes")) {
+            if (modal.classList.contains("hide")) {
+                modal.classList.remove("hide");
+                detailsHeading.innerText = `Sticky Notes App`;
+                details.innerText = `This react app allows you to make a sticky note with a title and description, add  or delete any notes on the list. The app also stores your existing notes in memory until the next time you load the app.`;
+                toolsUsed.innerHTML = `<strong>Tools used:</strong> React`;
+            }
+        } else if (item.classList.contains("name-tag")) {
+            if (modal.classList.contains("hide")) {
+                modal.classList.remove("hide");
+                detailsHeading.innerText = `Name Tag Generator`;
+                details.innerText = `Using this app you can generate a name tag by typing a name into the input box. You are able to create and delete name tags as you see fit.`;
+                toolsUsed.innerHTML = `<strong>Tools used:</strong> React`;
+            }
         }
     }); 
 });
