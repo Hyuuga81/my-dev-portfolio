@@ -93,10 +93,10 @@ heading.forEach(function(item) {
             if (modal.classList.contains("hide")) {
                 modal.classList.remove("hide");
                 detailsHeading.innerText = `Sticky Notes App`;
-                details.innerText = `This react app allows you to make a sticky note with a title and description, add  or delete any notes on the list. The app also stores your existing notes in memory until the next time you load the app.`;
+                details.innerText = `This react app allows you to make a sticky note with a title and description, add  or delete any notes on the list. The app also stores your existing notes in memory until the next time you load the app. The app makes use of React lifecycle components to save your exising notes.`;
                 toolsUsed.innerHTML = `<strong>Tools used:</strong> React`;
             }
-        } else if (item.classList.contains("name-tag")) {
+        } else if (item.classList.contains("name-tag")) { 
             if (modal.classList.contains("hide")) {
                 modal.classList.remove("hide");
                 detailsHeading.innerText = `Name Tag Generator`;
