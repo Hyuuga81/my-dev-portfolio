@@ -39,6 +39,76 @@ main {
     display: none;
 }
 
+h1,
+a {
+    color: #fff;
+}
+
+h2 {
+
+    padding-bottom: 50px;
+    color: #1d2228;
+}
+
+h3 {
+    color: #1d2228;
+}
+
+p {
+    font-size: 1em;
+    color: #1d2228;
+}
+
+/***************** MODAL ******************/
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+
+}
+
+.modal-contents {
+    position: relative;
+    background: #fff;
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 5px;
+}
+
+.modal-contents .fa-circle-xmark {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #fb8112;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+.details {
+    width: 80%;
+    text-align: justify;
+    font-size: .8em;
+    padding: 20px 0;
+}
+
+.tools {
+    font-size: .8em;
+}
+
 /***************** HEADER *****************/
 header {
     background-color: #1d2228;
@@ -148,8 +218,13 @@ i.fa-solid.fa-xmark {
     font-size: 2em;
     line-height: 1.5em;
     width: 100%;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    color: #fff;
+}
+
+.hero .color {
+    color: #fb8112;
 }
 
 /**************** ABOUT ME ****************/
@@ -170,7 +245,112 @@ i.fa-solid.fa-xmark {
 #about-me h2 {
     width: 100%;
     text-align: center;
+}
+
+#about-me .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#about-me .content img {
+    width: 70%;
+    margin: 50px 0;
+    border-radius: unset;
+}
+
+.content p {
+    width: 100%;
+    line-height: 28px;
     padding-bottom: 20px;
+}
+
+/************** SKILLS *******************/
+
+#skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 100px 0;
+}
+
+#skills .container {
+    width: 80%;
+}
+
+#skills h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#skills p {
+    width: 100%;
+    line-height: 28px;
+}
+
+.skill-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 50px 0;
+}
+
+.skill-content,
+.tool-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.skill-content .container,
+.tool-content .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.one-skill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+}
+
+.one-skill i {
+    width: 15%;
+    font-size: 4em;
+    color: #fb8122;
+    padding-bottom: 20px;
+}
+
+.one-skill .one-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.one-text .dark {
+    font-weight: bolder;
+    color: #1d2228;
+    padding-bottom: 20px;
+}
+
+.one-text p {
+    text-align: center;
 }
 
 /************** PORTFOLIO ****************/
@@ -182,12 +362,28 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 50px 0;
+    padding: 100px 0;
+}
+
+.portfolio-head {
+    width: 100%;
+}
+
+#portfolio h2 {
+    padding-bottom: 10px;
+}
+
+#portfolio p {
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+    padding-bottom: 20px;
+    font-style: italic;
 }
 
 .project {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #e1e2e2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +392,6 @@ i.fa-solid.fa-xmark {
     margin: 20px 0;
     border-radius: 10px;
 }
-
 
 
 img {
@@ -217,6 +412,15 @@ img {
 .project-info h3 {
     padding-bottom: 10px;
     width: 100%;
+    text-align: center;
+}
+
+.project-info .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .buttons a {
@@ -235,6 +439,7 @@ img {
     font-size: 1em;
     text-decoration: none;
 }
+
 
 /*************** CONTACT *****************/
 
@@ -271,7 +476,7 @@ footer {
 
 .email,
 .meet {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,6 +531,7 @@ footer {
 
 .social i {
     font-size: 2em;
+    color: #fb8122 !important;
 }
 
 #contact .end {
@@ -340,8 +546,8 @@ footer {
     bottom: 16px;
     right: 32px;
     opacity: 0;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,6 +570,24 @@ footer {
 
 @media (min-width: 768px) {
 
+    html {
+        font-size: 18px;
+    }
+
+    /***************** MODAL ******************/
+
+    .modal-contents {
+        width: 60%;
+    }
+
+    .details {
+        width: 80%;
+    }
+
+    .tools {
+        font-size: .8em;
+    }
+
     /*************** HERO *******************/
 
     .hero h1 {
@@ -376,7 +600,54 @@ footer {
     /************* ABOUT ********************/
 
     #about-me .container {
-        width: 70%;
+        width: 80%;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    #about-me .content img {
+        width: 50%;
+    }
+
+    /************* SKILLS ********************/
+
+    #skills .container {
+        width: 80%;
+    }
+
+    .skill-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 50px 0;
+    }
+
+    .skill-content .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    .one-skill {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+    }
+
+    .one-skill i {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
     }
 
     /************* PORTFOLIO ****************/
@@ -394,7 +665,6 @@ footer {
     .project {
         width: 45%;
     }
-
 
     /**************** CONTACT  **************/
 
@@ -438,11 +708,87 @@ footer {
     .meet {
         justify-content: center;
     }
+
+    /************ TO TOP BUTTON *******************/
+
+    .to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
 }
 
 /***************** DESKTOP STYLES ****************/
 
 @media (min-width: 1200px) {
+
+    /************** GENERAL STYLES ************/
+    html {
+        font-size: 21px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    /****************** MODAL *****************/
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+
+    }
+
+    .modal-contents {
+        position: relative;
+        background: #fff;
+        width: 25%;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        border-radius: 5px;
+    }
+
+    .modal-contents .fa-circle-xmark {
+        position: absolute;
+        top: -22px;
+        right: -15px;
+        color: #fb8112;
+        cursor: pointer;
+        font-size: 1.6em;
+    }
+
+    .details {
+        width: 80%;
+        text-align: justify;
+        font-size: .8em;
+        padding: 20px 0;
+    }
+
+    .tools {
+        font-size: .8em;
+    }
+
+    .project-title {
+        cursor: pointer;
+    }
+
+    .project-title:hover {
+        color: #fb8112;
+    }
+
     /***************** HEADER *****************/
 
     .menu {
@@ -484,7 +830,54 @@ footer {
     /**************** ABOUT ME ****************/
 
     #about-me .container {
-        width: 60%;
+        width: 80%;
+    }
+
+    #about-me .content {
+
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #about-me .content img {
+        width: 23%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content .about-copy {
+        width: 65%;
+    }
+
+    .content p {
+        width: 100%;
+        line-height: 40px;
+    }
+
+    /**************** SKILLS ****************/
+
+    #skills .container {
+        width: 90%;
+    }
+
+    .one-skill {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 50px;
+    }
+
+    .one-skill i {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .one-skill .one-text {
+        width: 72%;
     }
 
     /************* PORTFOLIO ****************/
@@ -498,4 +891,54 @@ footer {
     .project {
         width: 30%;
     }
+
+    .project-info .buttons {
+        font-size: 0.8em;
+    }
+
+    .project-info .buttons .shape {
+        background: #1d2228;
+    }
+
+    .project-info .buttons .shape:hover {
+        background: #fb8122 !important;
+    }
+
+    h3 {
+        cursor: pointer;
+    }
+
+    /*************** CONTACT *************/
+
+    .email-link .fa-envelope,
+    .email-link a {
+        color: #818181;
+    }
+
+    .email-link .fa-envelope:hover,
+    .email-link a:hover {
+        color: #fb8112;
+    }
+
+    .social i {
+        font-size: 2em;
+        color: #1d2228 !important;
+    }
+
+    .social i:hover {
+        color: #fb8122 !important;
+    }
+
+    .meet p {
+        line-height: 30px;
+    }
+
+    /************ TO TOP BUTTON *******************/
+
+    .to-top {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
+
 }

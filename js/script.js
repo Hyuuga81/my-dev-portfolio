@@ -10,7 +10,6 @@ const circleClose = document.querySelector(".fa-circle-xmark");
 const detailsHeading = document.querySelector(".details-heading");
 const toolsUsed = document.querySelector(".tools");
 
-
 // Navigation menu 
 bars.addEventListener("click", function () {
         overlay.style.width = "100%";
@@ -41,8 +40,6 @@ window.addEventListener("scroll", function () {
         toTop.classList.remove("active");
     }
 });
-<<<<<<< HEAD
-=======
 
 // Modal request
 heading.forEach(function(item) {
@@ -122,4 +119,3 @@ circleClose.addEventListener("click", function() {
         modal.classList.add("hide");
     }
 });
->>>>>>> main
