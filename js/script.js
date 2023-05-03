@@ -103,7 +103,15 @@ heading.forEach(function(item) {
                 details.innerText = `Using this app you can generate a name tag by typing a name into the input box. You are able to create and delete name tags as you see fit.`;
                 toolsUsed.innerHTML = `<strong>Tools used:</strong> React`;
             }
+        } else if (item.classList.contains("sunnyside")) { 
+            if (modal.classList.contains("hide")) {
+                modal.classList.remove("hide");
+                detailsHeading.innerText = `SunnySide Agency`;
+                details.innerText = `A design agency website that has a speech bubble navigation in the mobile view and a call to action that stands out in the menu.`;
+                toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS, JavaScript`;
+            }
         }
+
     }); 
 });
 
