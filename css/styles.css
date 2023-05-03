@@ -39,26 +39,7 @@ main {
     display: none;
 }
 
-h1, a {
-    color: #fff;
-}
-
-h2 {
-    
-    padding-bottom: 50px;
-    color: #1d2228;
-}
-
-h3 {
-    color: #1d2228;
-}
-
-p {
-    color: #1d2228; 
-}
-
 /***************** HEADER *****************/
-
 header {
     background-color: #1d2228;
     width: 100%;
@@ -106,12 +87,13 @@ i.fa-solid.fa-xmark {
     align-items: center;
     flex-flow: row wrap;
 }
+
 .menu-items {
     display: none;
     list-style-type: none;
 }
 
-/***************** SLIDER MENU *****************/
+/***************** OVERLAY *****************/
 .overlay {
     height: 100%;
     width: 0;
@@ -136,13 +118,9 @@ i.fa-solid.fa-xmark {
     padding: 8px;
     text-decoration: none;
     font-size: 1.5em;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #fff;
 }
 
 .overlay .close {
@@ -170,13 +148,8 @@ i.fa-solid.fa-xmark {
     font-size: 2em;
     line-height: 1.5em;
     width: 100%;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    color: #fff;
-}
-
-.hero .color {
-    color: #fb8112; 
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 /**************** ABOUT ME ****************/
@@ -197,108 +170,7 @@ i.fa-solid.fa-xmark {
 #about-me h2 {
     width: 100%;
     text-align: center;
-}
-
-#about-me .content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.content img {
-    width: 70%;
-    margin: 50px 0;
-}
-
-.content p {
-    width: 100%;
-    line-height: 28px;
     padding-bottom: 20px;
-}
-
-/************** SKILLS *******************/
-
-#skills {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 100px 0;
-}
-
-#skills .container {
-    width: 80%;
-}
-
-#skills h2 {
-    width: 100%;
-    text-align: center;
-}
-
-#skills p {
-    width: 100%;
-    line-height: 28px;
-}
-
-.skill-info {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 50px 0;
-}
-
-.skill-content, .tool-content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.skill-content .container, .tool-content .container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.one-skill {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-bottom: 50px;
-}
-
-.one-skill i {
-    width: 15%;
-    font-size: 4em;
-    color: #fb8122;
-    padding-bottom: 20px;
-}
-
-.one-skill .one-text {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.one-text .dark {
-    font-weight: bolder;
-    color: #1d2228;       
-}
-
-.one-text p {
-    text-align: center;
 }
 
 /************** PORTFOLIO ****************/
@@ -310,12 +182,12 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .project {
     width: 100%;
-    background-color: #e1e2e2;  
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,6 +196,8 @@ i.fa-solid.fa-xmark {
     margin: 20px 0;
     border-radius: 10px;
 }
+
+
 
 img {
     width: 100%;
@@ -343,15 +217,6 @@ img {
 .project-info h3 {
     padding-bottom: 10px;
     width: 100%;
-    text-align: center;
-}
-
-.project-info .buttons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 .buttons a {
@@ -364,7 +229,7 @@ img {
     margin-top: 15px;
     padding: 10px 0;
     border-radius: 30px;
-    background-color: #1d2228; 
+    background-color: #1d2228;
     color: #fff;
     cursor: pointer;
     font-size: 1em;
@@ -380,6 +245,7 @@ footer {
     align-items: center;
     flex-flow: row wrap;
 }
+
 #contact {
     width: 100%;
     display: flex;
@@ -403,8 +269,9 @@ footer {
     flex-flow: row wrap;
 }
 
-.email, .meet {
-    width: 80%;
+.email,
+.meet {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -423,6 +290,7 @@ footer {
     color: #4d4d4d;
     padding-left: 10px;
 }
+
 .fa-envelope {
     color: #4d4d4d;
 }
@@ -458,7 +326,6 @@ footer {
 
 .social i {
     font-size: 2em;
-    color: #fb8122 !important; 
 }
 
 #contact .end {
@@ -473,8 +340,8 @@ footer {
     bottom: 16px;
     right: 32px;
     opacity: 0;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -497,10 +364,6 @@ footer {
 
 @media (min-width: 768px) {
 
-    html {
-        font-size: 18px;
-    }
-
     /*************** HERO *******************/
 
     .hero h1 {
@@ -513,56 +376,8 @@ footer {
     /************* ABOUT ********************/
 
     #about-me .container {
-        width: 80%;
+        width: 70%;
     }
-
-    .content {
-        justify-content: center;
-    }
-
-    .content img {
-        width: 50%;
-    }
-
-    /************* SKILLS ********************/
-
-    #skills .container {
-        width: 80%;
-    }
-    
-    .skill-info {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        padding: 50px 0;
-    }
-    
-    .skill-content .container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-flow: row wrap;
-    }
-    
-    .one-skill {
-        width: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        padding-bottom: 50px;
-    }
-    
-    .one-skill i {
-        width: 100%;
-        font-size: 4em;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-    
 
     /************* PORTFOLIO ****************/
 
@@ -575,6 +390,7 @@ footer {
         justify-content: space-between;
         align-items: stretch;
     }
+
     .project {
         width: 45%;
     }
@@ -586,7 +402,9 @@ footer {
         justify-content: space-between;
     }
 
-    .email, .social, .meet {
+    .email,
+    .social,
+    .meet {
         width: 30%;
         text-align: center;
     }
@@ -619,35 +437,18 @@ footer {
 
     .meet {
         justify-content: center;
-    }   
-
-    /************ TO TOP BUTTON *******************/
-
-.to-top {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-}
+    }
 }
 
 /***************** DESKTOP STYLES ****************/
 
 @media (min-width: 1200px) {
-
-    /************** GENERAL STYLES ************/
-    html {
-        font-size: 21px;
-    }
-
-    .hero h1 {
-        font-size: 3em;
-    }
-
     /***************** HEADER *****************/
 
     .menu {
         width: 50%;
     }
+
     .menu-items {
         width: 100%;
         display: flex;
@@ -683,54 +484,8 @@ footer {
     /**************** ABOUT ME ****************/
 
     #about-me .container {
-        width: 80%;
+        width: 60%;
     }
-
-    #about-me .content {
-
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .content img {
-        width: 23%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .content .about-copy {
-        width: 65%;
-    }
-    .content p {
-        width: 100%;
-        line-height: 40px;
-    }
-
-    /**************** SKILLS ****************/
-
-    #skills .container {
-        width: 90%;
-    }
-    .one-skill {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        padding-bottom: 50px;
-    }
-    
-    .one-skill i {
-        width: 100%;
-        font-size: 4em;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .one-skill .one-text  { 
-        width: 72%;
-    }
-
 
     /************* PORTFOLIO ****************/
 
@@ -739,51 +494,8 @@ footer {
         justify-content: space-between;
         align-items: stretch;
     }
+
     .project {
         width: 30%;
     }
-
-    .project-info .buttons  {
-        font-size: 0.8em;
-    }
-
-    .project-info .buttons .shape {
-        background: #1d2228;
-    }
-
-    .project-info .buttons .shape:hover {
-        background: #fb8122 !important;
-    }
-
-    /*************** CONTACT *************/
-
-    .email-link .fa-envelope, .email-link a {
-        color: #818181;
-    }
-
-    .email-link .fa-envelope:hover, .email-link a:hover {
-        color: #fb8112;
-    }
-
-    .social i {
-        font-size: 2em;
-        color: #1d2228 !important;
-    }
-
-    .social i:hover {
-        color: #fb8122 !important; 
-    }
-
-    .meet p {
-        line-height: 30px;
-    }
-
-    /************ TO TOP BUTTON *******************/
-
-.to-top {
-    width: 50px;
-    height: 50px;
-    font-size: 32px;
-}
-
 }
