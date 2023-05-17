@@ -10,6 +10,7 @@ const circleClose = document.querySelector(".fa-circle-xmark");
 const detailsHeading = document.querySelector(".details-heading");
 const toolsUsed = document.querySelector(".tools");
 
+
 // Navigation menu 
 bars.addEventListener("click", function () {
         overlay.style.width = "100%";
@@ -41,17 +42,37 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// Mouse over menu
+const projects = document.querySelectorAll(".project");
+
+
+    projects.forEach(project => {
+        project.addEventListener("mouseover", function() {
+            const glide = project.querySelector(".glide");
+            if(glide.classList.contains("hide")) {
+                glide.classList.remove("hide");
+            }
+        });
+    
+        project.addEventListener("mouseout", function() {
+            const glide = project.querySelector(".glide");
+            if (!glide.classList.contains("hide")) {
+                glide.classList.add("hide");
+            }
+        });
+    });
+ 
+
+
+
+
+
 // Modal request
+
+
 heading.forEach(function(item) {
     item.addEventListener("click", function() {
-        if (item.classList.contains("subscription")) {
-            if (modal.classList.contains("hide")) {
-                modal.classList.remove("hide");
-                detailsHeading.innerText = `Subscription Calculator`;
-                details.innerText = `This subscription calculator calculates the total cost of a subscription using the duration in months and the cost of the plan selected. I utilized change event listeners and functions.`;
-                toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS, JavaScript`;
-            }
-        } else if (item.classList.contains("guess")) {
+        if (item.classList.contains("guess")) {
             if (modal.classList.contains("hide")) {
                 modal.classList.remove("hide");
                 detailsHeading.innerText = `Guessing Game`;
@@ -64,20 +85,6 @@ heading.forEach(function(item) {
                 detailsHeading.innerText = `Github Repo Gallery`;
                 details.innerText = `This project is as it's named a gallery of all my git repos to date. They can be sorted and filtered using the search bar. Utilized APIs, async functions and objects.`;
                 toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS, JavaScript`;
-            }
-        } else if (item.classList.contains("potluck")) {
-            if (modal.classList.contains("hide")) {
-                modal.classList.remove("hide");
-                detailsHeading.innerText = `Potluck Guestlist`;
-                details.innerText = `The app user can input the names of their guests and then randomly assign a list of dishes for each guest to bring. No dish is repeated when assigned to the guests. I used arrays, click and keyboard event listeners, and conditional loops.`;
-                toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS, JavaScript`;
-            }
-        } else if (item.classList.contains("rogue")) {
-            if (modal.classList.contains("hide")) {
-                modal.classList.remove("hide");
-                detailsHeading.innerText = `Rogue Pickings`;
-                details.innerText = `I built a responsive landing page for a food truck to provide important information to potential customers ranging from the menu to contact information. I utilized flex-box and media queries to build a responsive site.`;
-                toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS`;
             }
         } else if (item.classList.contains("unplugged")) {
             if (modal.classList.contains("hide")) {
@@ -105,10 +112,16 @@ heading.forEach(function(item) {
         } else if (item.classList.contains("sunnyside")) { 
             if (modal.classList.contains("hide")) {
                 modal.classList.remove("hide");
-                detailsHeading.innerText = `SunnySide Agency`;
+                detailsHeading.innerText = `Sunnyside Agency`;
                 details.innerText = `A design agency website that has a speech bubble navigation in the mobile view and a call to action that stands out in the menu.`;
                 toolsUsed.innerHTML = `<strong>Tools used:</strong> HTML, CSS, JavaScript`;
             }
+        }
+
+        // Remove mouse over effect when a heading is selected
+        const glides = document.querySelectorAll(".glide");
+        for(let glide of glides) {
+            glide.classList.add("hide");
         }
 
     }); 
