@@ -276,7 +276,7 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 #skills .container {
@@ -353,7 +353,6 @@ i.fa-solid.fa-xmark {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 100px 0;
 }
 
 .portfolio-head {
