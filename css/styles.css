@@ -321,7 +321,7 @@ i.fa-solid.fa-xmark {
 }
 
 .one-skill {
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +332,7 @@ i.fa-solid.fa-xmark {
 }
 
 .one-skill i {
-    font-size: 4em;
+    font-size: 3em;
     color: #fb8122;
     padding-bottom: 20px;
 }
@@ -632,7 +632,7 @@ footer {
     }
 
     .one-skill {
-        width: 45%;
+        width: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -642,7 +642,7 @@ footer {
 
     .one-skill i {
         width: 100%;
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         padding-bottom: 30px;
     }
@@ -880,7 +880,7 @@ footer {
 
     .one-skill i {
         width: 100%;
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         padding-bottom: 30px;
     }
