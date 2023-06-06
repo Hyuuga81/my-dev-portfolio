@@ -44,8 +44,7 @@ window.addEventListener("scroll", function () {
 
 // Mouse over menu
 const projects = document.querySelectorAll(".project");
-
-
+if (window.innerWidth >= 1200) {
     projects.forEach(project => {
         project.addEventListener("mouseover", function() {
             const glide = project.querySelector(".glide");
@@ -61,6 +60,8 @@ const projects = document.querySelectorAll(".project");
             }
         });
     });
+}
+
  
 
 
